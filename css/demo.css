@@ -41,6 +41,7 @@ Main Components
   background-color: #a10022;
 }
 .cd-header h1 {
+    text-shadow: 2px 2px 5px black;
   color: white;
   line-height: 150px;
   text-align: center;
@@ -257,7 +258,8 @@ xgallery
   width: 100%;
 }
 .cd-gallery li {
-  margin-bottom: 1.6em;
+  margin-top: inherit;
+    margin-bottom: 1.6em;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   display: none;
 }
@@ -272,8 +274,11 @@ xgallery
   width: 100%;
 }
 .cd-gallery .cd-fail-message {
-  display: none;
+ color: white;
+    display: none;
   text-align: center;
+    font-size: 3em;
+    font-weight: bold;
 }
 @media only screen and (min-width: 768px) {
   .cd-gallery {
@@ -288,7 +293,8 @@ xgallery
     clear: both;
   }
   .cd-gallery li {
-    width: 48%;
+  
+      width: 48%;
     margin-bottom: 2em;
   }
 }
@@ -400,13 +406,15 @@ xfilter
   left: 0;
   height: 50px;
   line-height: 50px;
-  width: 60px;
+  width: auto;
   /* image replacement */
   overflow: hidden;
   text-indent: 100%;
   color: transparent;
   white-space: nowrap;
-  background: transparent url("../img/cd-icon-filter.svg") no-repeat center center;
+  
+background: transparent url("../img/empty-filter-xxl.png") no-repeat center center;
+
   z-index: 3;
 }
 .cd-filter-trigger.filter-is-visible {
@@ -512,7 +520,7 @@ xcustom form elements
 .cd-filter-block select:focus {
   outline: none;
   background-color: #ffffff;
-  border-color: #41307c;
+  border-color: #a10022;
 }
 .cd-filter-block input[type='search'] {
   /* custom style for the search element */

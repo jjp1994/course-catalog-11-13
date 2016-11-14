@@ -1,30 +1,24 @@
-// YOUR SCRIPTS
-$('#grid').click(function(){
-    
-  //remove Only list class//
-    $('.cd-gallery').removeClass('list');
-    
-//add Only grid class//
-    $('.cd-gallery').addClass('grid');
-    
-    
-})
+/ Click Grid View, hide paragraphs
+$('#grid').click( function() {
+  
+  // remove *any* existing classes
+  $('main').removeClass();
+  // add 'grid' class
+  $('main').addClass('grid');
+  
+});
+
+// Click Grid View, hide paragraphs
+$('#list').click( function() {
+  
+  // remove *any* existing classes
+  $('main').removeClass();
+  // add 'grid' class
+  $('main').addClass('list');
+  
+});
 
 
-
-
-
-//LIST VIEW//
-
-$('#grid').click(function(){
-    
-  //remove Only list class//
-    $('.cd-gallery').removeClass('grid');
-    
-//add Only grid class//
-    $('.cd-gallery').addClass('list');
-    
-    
     
     
     
